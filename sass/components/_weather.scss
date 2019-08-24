@@ -1,0 +1,88 @@
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  background-image: url('../img/metro-ui-weather-design.jpg');
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  @include respond(tab-port) {
+    padding: 1%;
+  }
+  @include respond(tab-land) {
+    justify-content: space-around;
+  }
+}
+
+.input-container {
+  position: relative;
+  @include respond(tab-land) {
+    align-self: center;
+  }
+}
+
+.frame-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 3%;
+
+  @include respond(tab-land) {
+    padding: 2%;
+  }
+  &__weather-container {
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    @include respond(phone) {
+      flex-direction: column-reverse;
+      align-content: center;
+    }
+    @include respond(tab-land) {
+      justify-content: center;
+    }
+
+    &__rectangle-frame {
+      position: relative;
+      opacity: 0.6;
+      display: flex;
+      width: 224px;
+      height: 320px;
+      height: 280;
+      flex-direction: column;
+      background-color: $color-primary-rectangle;
+      margin-left: 3%;
+      padding: 2%;
+      @include respond(phone) {
+        margin-bottom: 15% !important;
+      }
+      @include respond(tab-land) {
+        margin-bottom: 1.5%;
+        padding: 5%;
+      }
+
+      @include respondMin(big-desktop) {
+        width: 324px;
+        height: 420px;
+      }
+    }
+  }
+}
+
+.weather-today {
+  width: 25%;
+  background-color: transparent !important;
+
+  margin-top: 1%;
+  @include respond(tab-port) {
+    width: 224px;
+  }
+}

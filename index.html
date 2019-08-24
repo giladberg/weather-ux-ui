@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="sass/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/kdr3eda.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="input-container">
+        <input
+          class="search-bar"
+          type="text"
+          placeholder="Search another city"
+        />
+        <img class="search-svg" src="img/Rectangle 2.svg" alt="search-img" />
+      </div>
+
+      <div class="frame-container">
+        <img class="arrow-svg" src="img/arrow right.svg" alt="arrow right" />
+        <div class="frame-container__weather-container">
+          <div class="frame-container__weather-container__rectangle-frame">
+            <p class="weather-day">wednesday</p>
+            <img
+              class="weather-svg margin-top"
+              src="img/cloudy.svg"
+              alt="cloudy"
+            />
+            <p class="weather-temp ">
+              14<span class="white-circle">&#9900;</span>&nbsp; /6<span
+                class="white-circle"
+                >&#9900;</span
+              >
+            </p>
+            <p class="weather-condition">cloudy</p>
+          </div>
+          <div class="frame-container__weather-container__rectangle-frame">
+            <p class="weather-day">tuesday</p>
+            <img class="weather-svg" src="img/rain.svg" alt="cloudy" />
+            <p class="weather-temp">
+              20<span class="white-circle">&#9900;</span>&nbsp; /12<span
+                class="white-circle"
+                >&#9900;</span
+              >
+            </p>
+            <p class="weather-condition">rain</p>
+          </div>
+          <div class="frame-container__weather-container__rectangle-frame">
+            <p class="weather-day">monday</p>
+            <img
+              class="weather-svg sunny-svg"
+              src="img/sunny.svg"
+              alt="cloudy"
+            />
+            <p class="weather-temp">
+              26<span class="white-circle">&#9900;</span>&nbsp; /19<span
+                class="white-circle"
+                >&#9900;</span
+              >
+            </p>
+            <p class="weather-condition ">sunny</p>
+          </div>
+          <div
+            class="frame-container__weather-container__rectangle-frame weather-today"
+          >
+            <h3 class="city-name">NEW YORK</h3>
+            <p class="today">today</p>
+            <p class="weather-temp-today">
+              23<span class="white-circle">&#9900;</span>
+            </p>
+            <p class="weather-condition">sunny</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
